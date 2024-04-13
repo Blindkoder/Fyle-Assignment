@@ -17,7 +17,7 @@ Interactive user interface for inputting values and viewing results.
 Error handling for invalid inputs and edge cases.
 Responsive design for use on desktop and mobile devices.
 Demo
-[Insert link to live demo or screenshots here]
+https://blindkoder.github.io/Fyle-Assignment/
 
 Installation
 To run the tax calculator locally on your machine, follow these steps:
