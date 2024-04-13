@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Tax Calculator</h2>
+        <div class="label-container">
+            <label for="income">Enter gross annual income</label>
+
+            <div class="sub-container">
+                <i class="fas fa-question-circle" id="infoIcon"></i>
+                <div class="tooltip" id="tooltip">total salary without any deductions</div>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <input id="income" class="income" placeholder="Enter gross annual income">
+            <div class="error-icon" id="errorIconContainer1" title="Please enter only numbers"><i
+                    class="fas fa-exclamation-circle"></i></div>
+
+        </div>
+        <div class="label-container">
+            <label for="ex-income">Enter extra income</label>
+
+            <div class="sub-container">
+                <i class="fas fa-question-circle" id="infoIcon1"></i>
+                <div class="tooltip" id="tooltip1">Extra income from other sources</div>
+            </div>
+        </div>
+        <div class="input-container">
+            <input id="ex-income" class="income" placeholder="Enter extra income from other sources">
+            <div class="error-icon" id="errorIconContainer2" title="Please enter only numbers"><i
+                    class="fas fa-exclamation-circle"></i></div>
+        </div>
+
+        <div class="label-container">
+            <label for="dropbtn">Enter age group</label>
+
+            <div class="sub-container">
+                <i class="fas fa-question-circle" id="infoIcon2"></i>
+                <div class="tooltip" id="tooltip2">Age group of person</div>
+            </div>
+            <span id="errorIcon1" class="error-icon1"></span>
+        </div>
+        <div class="dropdown" id="ic">
+            <select name="age" class="dropdown-content dropbtn" id="dropbtn">
+
+                <option value="">--Please choose an option--</option>
+                <option value="30">
+                    < 40</option>
+                <option value="50">≥ 40 & < 60</option>
+                <option value="70">≥ 60</option>
+            </select>
+
+        </div>
+        <div class="label-container">
+            <label for="deductions">Enter total applicable deductions</label>
+
+            <div class="sub-container">
+                <i class="fas fa-question-circle" id="infoIcon3"></i>
+                <div class="tooltip" id="tooltip3">Total deductions</div>
+            </div>
+        </div>
+        <div class="input-container">
+            <input id="deductions" placeholder="Add total applicable deductions">
+            <div class="error-icon" id="errorIconContainer3" title="Please enter only numbers"><i
+                    class="fas fa-exclamation-circle"></i></div>
+        </div>
+
+
+        <button type="button" id="openModalBtn" onclick="calculateTax()">Calculate Tax</button>
+        <div id="myModal" class="modal">
+
+            <div class="modal-content">
+                <span class="close">&times;</span>
+
+
+                <div id="modalContent"></div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
