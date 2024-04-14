@@ -2,7 +2,8 @@ document.getElementById("openModalBtn").addEventListener("click", function(event
     var input = document.getElementById("dropbtn");
     var errorIcon = document.getElementById('errorIcon1');
     if (input.value) {
-      calculateTaxMain();
+        errorIcon.style.display= "none" ;
+        calculateTaxMain();
     } else {
       errorIcon.style.display = 'inline';
       input.classList.add('error');
