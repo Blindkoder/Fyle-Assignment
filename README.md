@@ -30,15 +30,10 @@ Installation
 
 To run the tax calculator locally on your machine, follow these steps:
 
-Clone the repository:
-
 Copy code
-git clone https://github.com/your-username/tax-calculator.git
-Navigate to the project directory:
-
-Copy code
-cd tax-calculator
 Open index.html in your web browser.
+or 
+paste that code in VS code then open with live server.
 
 Alternatively, you can view the live demo of the tax calculator.
 
